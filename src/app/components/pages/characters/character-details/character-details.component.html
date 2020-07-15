@@ -1,0 +1,8 @@
+<div class="row" *ngIf=" character$ | async as character">
+  <div class="col-xs-12 col-sm-12 col-md-4 mx-auto text-center">
+   <app-character [character]="character"></app-character>
+   <button (click)="onBack()" class="btn btn-dark">
+      Back
+   </button>
+  </div>
+</div>

@@ -1,0 +1,9 @@
+<div class="row" infinite-scroll (scrolled)="onScrollDown()">
+  <div class="col-md-4 col-xs-12 col-sm-6"  *ngFor="let character of characters">
+   <app-character [character]="character"></app-character>
+  </div>
+  <div class="col-md-12 col-xs-12 col-sm-12  mt-5"  *ngIf="characters.length <=0">
+     <p>no results .....</p>
+  </div>
+</div>
+<button class="btn btn-dark"> go up</button>
