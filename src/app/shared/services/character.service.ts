@@ -2,11 +2,13 @@ import { Injectable } from '@angular/core';
 import {HttpClient} from '@angular/common/http'
 import {environment} from '../../../environments/environment'
 import {Character} from '@app/components/pages/characters/interface/character.interface'
+
 @Injectable({
   providedIn: 'root'
 })
-export class CharacterService {
 
+export class CharacterService {
+  /* hello */
   constructor(private http: HttpClient) { }
 
   searchCharacter(query='', page=1){
